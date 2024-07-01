@@ -25,7 +25,7 @@ The code challenge includes three unslove problems whereby chalenge;
 
 
 ## Week 1 Toy problems Prerequisites
-   ### Prerequisites: 
+   ## Prerequisites: 
          
    1. Create a repository on your GitHub account. 
 
@@ -58,6 +58,42 @@ In the code challenge both the Comparison and Logical Operators are used;
       Logical operators are used to determine the logic between variables or values.
 
       * The `console.log`is simply used to call the function and know if the stated code of the conditions are accurate.
-      
 
-## Author
+## Student Grade Calculator
+
+This JavaScript function prompts the user to input student marks and then outputs the corresponding grade based on predefined criteria.
+
+## Usage
+
+   **Prompt for Input:** The function will prompt the user to enter their marks (a number between 0 and 100).
+   **Grade Calculation:** Based on the input mark, the function will determine and display the corresponding grade:
+   - A: 80-100
+   - B: 60-79
+   - C: 50-59
+   - D: 40-49
+   - E: 0-39
+   **Invalid Input:** If the input is outside the valid range (0-100), the function will display an error message indicating the input is invalid.
+
+## Function Explanation
+
+The function `studentGrade()` performs the following steps:
+- Prompts the user to input their marks using `prompt()`.
+- Evaluates the input mark against a series of conditions to determine the appropriate grade.
+- Outputs the grade to the console using `console.log()`.
+
+# Speeding Demerit Points Detector
+This program calculates demerit points based on the speed of a car compared to a speed limit of 70 km/h.
+
+## Overview
+The program prompts the user to input the speed of their car in kilometers per hour (km/h). Based on the input:
+
+If the speed is less than 70 km/h, it prints "OK".
+If the speed is 70 km/h or more, it calculates demerit points:
+Each 5 km/h above the speed limit (70 km/h) results in one demerit point.
+It then prints the total number of demerit points accumulated.
+If the total demerit points exceed 12, it prints "License suspended".
+
+## Usage
+Ensure detector.js is in your project directory.
+Run the script using Node.js or any JavaScript environment that supports prompt() for user input.
+Example usage:

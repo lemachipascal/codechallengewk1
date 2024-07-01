@@ -9,30 +9,37 @@
     Difference in speed/ 5 
     (z < 12)- License is Suspended */
 
-function calculateDemeritPoints(){
-      // prompt the user to input speed 
-    var dermeritpoints = prompt('ENTER YOUR SPEED')
-
-const speedlimit = 70;
-let dermeritpoints = 0;
-
-//conditions
-if (speed < speedlimit){
-    console.log("OK")
-}else{ 
-//calculate the demerit points 
-demeritPoints=Math.floor ((speed - speedLimit)/5) 
-
-//nested if
-if (demeritPoints > 12){
-    console.log ("License suspended")
-}else {
-    console.log(`Point: ${dermeritpoints}`)
-}
-
-}
-
-}
-
-//call the function 
-calcaluteDemeritPoints()
+    function calculateDemeritPoints() {
+        const speedLimit = 70;
+        let demeritPoints = 0;
+    
+        // Prompt user to input speed
+        const speed = prompt('Enter your speed (in km/h):');
+    
+        // Convert input to a number
+        const speedNumber = parseFloat(speed);
+    
+        // Check if the input is a valid number
+        if (!isNaN(speedNumber)) {
+            // Compare speed with speed limit
+            if (speedNumber < speedLimit) {
+                console.log("OK");
+            } else {
+                // Calculate demerit points
+                demeritPoints = Math.floor((speedNumber - speedLimit) / 5);
+    
+                // Check if license should be suspended
+                if (demeritPoints > 12) {
+                    console.log("License suspended");
+                } else {
+                    console.log(`Points: ${demeritPoints}`);
+                }
+            }
+        } else {
+            console.log("Invalid input. Please enter a valid number for speed.");
+        }
+    }
+    
+    // Call the function to execute
+    calculateDemeritPoints();
+    
