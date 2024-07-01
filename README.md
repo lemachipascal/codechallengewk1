@@ -60,3 +60,4 @@ In the code challenge both the Comparison and Logical Operators are used;
       * The `console.log`is simply used to call the function and know if the stated code of the conditions are accurate.
       
 
+## Author
