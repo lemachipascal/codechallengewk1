@@ -97,3 +97,36 @@ If the total demerit points exceed 12, it prints "License suspended".
 Ensure detector.js is in your project directory.
 Run the script using Node.js or any JavaScript environment that supports prompt() for user input.
 Example usage:
+
+# Net Salary Calculator
+This program calculates an individual’s net salary based on their basic salary and benefits. It computes various deductions such as PAYE (Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary.
+
+## Functionality
+The calculateEarnings function performs the following calculations:
+
+* Total Salary Calculation: Adds the basic salary and benefits to get the total monthly salary.
+*Annual Total Salary: Multiplies the total monthly salary by 12 to get the annual total salary.
+*PAYE (Tax) Calculation: Determines the income tax (PAYE) based on annual income using progressive tax brackets.
+*Monthly PAYE: Divides the annual PAYE by 12 to get the monthly tax deduction.
+* NHIF Deduction: Computes the NHIF deduction based on predefined salary caps and rates.
+* NSSF Deduction: Calculates NSSF deductions based on two tiers with respective caps and rates.
+* Housing Levy Deduction: Applies a fixed rate (0.015) to the total monthly salary for housing levy.
+* Total Deductions: Sum of PAYE, NHIF, NSSF, and housing levy deductions.
+* Net Earnings: Total salary minus total deductions.
+
+## Usage
+To use this program:
+
+1. Input: Run the runCalculator() function in a JavaScript environment that supports prompt() for user input.
+
+- Enter your basic monthly salary when prompted.
+- Enter your benefits when prompted.
+- Output: The program will then display a breakdown of the salary calculations, including:
+
+## Basic Salary
+* Benefits
+* Total Salary (Basic Salary + Benefits)
+* Monthly PAYE (Tax)
+* NHIF Deduction
+* NSSF Deduction
+* Net Earnings (Total Salary - Total Deductions)
